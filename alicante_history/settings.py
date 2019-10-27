@@ -6,7 +6,11 @@ SECRET_KEY = '8#3cj-&=^jfta)=+!z-cs1xv6k7p!kiv-2tdz!%gsr(ri0*b)-'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'alicante-history-pro.hfngfdcp2u.eu-west-3.elasticbeanstalk.com'
+]
 
 VENDOR_APPS = [
     'django.contrib.admin',
