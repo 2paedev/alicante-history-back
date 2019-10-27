@@ -8,10 +8,10 @@ pylint = "*"
 flake8 = "*"
 
 [packages]
-django = "*"
 djangorestframework = "*"
 pygments = "*"
 awsebcli = "*"
+django = "==2.1.*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"

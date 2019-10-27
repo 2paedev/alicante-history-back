@@ -7,26 +7,18 @@ SECRET_KEY = '8#3cj-&=^jfta)=+!z-cs1xv6k7p!kiv-2tdz!%gsr(ri0*b)-'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'alicante-history-pro.hfngfdcp2u.eu-west-3.elasticbeanstalk.com'
+    'alicante-history-pro.kieeiugcnu.eu-west-3.elasticbeanstalk.com'
 ]
 
-VENDOR_APPS = [
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    # 'rest_framework',
 ]
-
-CUSTOM_APPS = [
-    'articles.apps.ArticlesConfig',
-]
-
-INSTALLED_APPS = VENDOR_APPS + CUSTOM_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
