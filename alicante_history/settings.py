@@ -31,7 +31,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'alicante_history.urls'
-
+#TEST
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
