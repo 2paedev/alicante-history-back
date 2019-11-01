@@ -11,7 +11,8 @@ flake8 = "*"
 djangorestframework = "*"
 pygments = "*"
 awsebcli = "*"
-django = "==2.1.*"
+django = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.7"
