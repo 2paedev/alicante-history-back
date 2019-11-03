@@ -4,9 +4,6 @@ from alicante_history.settings.base import *
 
 DEBUG = True
 
-BASE_URL = 'http://localhost:8000'
-API_URL = ''
-
 ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_ALLOW_ALL = True
