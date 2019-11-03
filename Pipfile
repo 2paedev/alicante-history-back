@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 pylint = "*"
 flake8 = "*"
+jupyter = "*"
 
 [packages]
 djangorestframework = "*"
@@ -13,6 +14,8 @@ pygments = "*"
 awsebcli = "*"
 django = "*"
 psycopg2-binary = "*"
+pillow = "*"
+django-extra-fields = "*"
 
 [requires]
 python_version = "3.7"

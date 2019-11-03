@@ -12,7 +12,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'articles',
+    'custom_commands.apps.CustomCommandsConfig',
+    'articles.apps.ArticlesConfig',
+    'articles_resume.apps.ArticlesResumeConfig',
+    'tags.apps.TagsConfig',
+    'email_subscription.apps.EmailSubscriptionConfig',
+    'authors.apps.AuthorsConfig',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +64,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+APPEND_SLASH = False
 
 LANGUAGE_CODE = 'en-us'
 
