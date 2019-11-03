@@ -12,7 +12,7 @@ class Article(models.Model):
     author = models.ForeignKey(Author, related_name='article_author', on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag)
     date = models.DateField(default=datetime.date.today)
-    image = models.ImageField(upload_to='static/images/', blank=False, null=False)
+    image = models.ImageField(upload_to='images/', blank=False, null=False)
     # image = models.FileField(blank=True)
     text = models.CharField(max_length=10000, blank=False, null=False, default='')
 

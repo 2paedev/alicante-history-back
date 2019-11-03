@@ -12,6 +12,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'storages',
     'custom_commands.apps.CustomCommandsConfig',
     'articles.apps.ArticlesConfig',
     'articles_resume.apps.ArticlesResumeConfig',
@@ -80,5 +81,4 @@ USE_TZ = True
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__name__))
 
 STATIC_URL = '/static/'
-
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
