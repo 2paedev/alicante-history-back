@@ -6,6 +6,7 @@ class Author(models.Model):
     name = models.CharField(max_length=50, blank=True, default='')
     surname = models.CharField(max_length=50, blank=True, default='')
     email = models.CharField(max_length=50, blank=True, default='')
+    image = models.ImageField(upload_to='images/authors', blank=False, null=False)
 
     class Meta:
         ordering = ['name']

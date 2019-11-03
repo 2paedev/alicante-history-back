@@ -7,4 +7,4 @@ class EmailSubscriptionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = EmailSubscription
-        fields = ['id', 'email']  # , 'created']
+        fields = '__all__'
