@@ -11,7 +11,6 @@ jupyter = "*"
 [packages]
 djangorestframework = "*"
 pygments = "*"
-awsebcli = "*"
 django = "*"
 psycopg2-binary = "*"
 pillow = "*"
