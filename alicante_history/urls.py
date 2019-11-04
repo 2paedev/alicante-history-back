@@ -5,6 +5,7 @@ from rest_framework import routers
 from articles.urls import router as router_articles
 from authors.urls import router as router_authors
 from email_subscription.urls import router as router_email_subscription
+from resume.urls import router as router_resume
 from tags.urls import router as router_tags
 
 
@@ -27,8 +28,13 @@ router.extend(router_articles)
 router.extend(router_authors)
 router.extend(router_tags)
 router.extend(router_email_subscription)
+router.extend(router_resume)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+]
+
+urlpatterns += [
+    path('api-auth/', include('rest_framework.urls')),
 ]

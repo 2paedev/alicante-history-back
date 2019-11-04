@@ -15,10 +15,10 @@ INSTALLED_APPS = [
     'storages',
     'custom_commands.apps.CustomCommandsConfig',
     'articles.apps.ArticlesConfig',
-    'articles_resume.apps.ArticlesResumeConfig',
     'tags.apps.TagsConfig',
     'email_subscription.apps.EmailSubscriptionConfig',
     'authors.apps.AuthorsConfig',
+    'resume.apps.ResumeConfig',
 ]
 
 MIDDLEWARE = [

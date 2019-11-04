@@ -13,7 +13,6 @@ class Article(models.Model):
     tags = models.ManyToManyField(Tag)
     date = models.DateField(default=datetime.date.today)
     image = models.ImageField(upload_to='images/', blank=False, null=False)
-    # image = models.FileField(blank=True)
     text = models.CharField(max_length=10000, blank=False, null=False, default='')
 
     class Meta:
