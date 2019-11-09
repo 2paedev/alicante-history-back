@@ -1,10 +1,14 @@
 from rest_framework import serializers
 
+from authors.serializers import AuthorSerializer
+from custom_image.serializers import CustomImageSerializer
+
 from .models import Article
 
 
 class ArticleSerializer(serializers.ModelSerializer):
-    image = serializers.ImageField(max_length=None, use_url=True,)
+    images = CustomImageSerializer(many=True)
+    author = AuthorSerializer()
 
     class Meta:
         model = Article

@@ -7,7 +7,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = ()
 
 DATABASES = {
     'default': {
@@ -19,3 +18,6 @@ DATABASES = {
         'PORT': ''                 # set to empty string for default
     }
 }
+
+MEDIA_URL = '/images/'
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'images')

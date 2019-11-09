@@ -1,5 +1,8 @@
+from django.conf import settings
+from django.conf.urls import url
 from django.contrib import admin
 from django.urls import include, path
+from django.views.static import serve
 from rest_framework import routers
 
 from articles.urls import router as router_articles
@@ -38,3 +41,10 @@ urlpatterns = [
 urlpatterns += [
     path('api-auth/', include('rest_framework.urls')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += [
+        url(r'^images/(?P<path>.*)$', serve, {
+            'document_root': settings.MEDIA_ROOT,
+        }),
+    ]
