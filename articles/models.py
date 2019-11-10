@@ -15,6 +15,7 @@ class Article(models.Model):
     date = models.DateField(default=datetime.date.today)
     images = models.ManyToManyField(CustomImage)
     text = models.CharField(max_length=10000, blank=False, null=False, default='')
+    likes = models.PositiveIntegerField(blank=False, null=False, default=0)
 
     class Meta:
         ordering = ['created']
