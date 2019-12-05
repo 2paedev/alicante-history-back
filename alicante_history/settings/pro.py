@@ -18,3 +18,6 @@ DATABASES = {
         'PORT': os.environ.get('ALICANTE_HISTORY_PORT_DB'),
     }
 }
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
