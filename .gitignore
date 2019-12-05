@@ -1,6 +1,7 @@
 # Django
 **/db.sqlite3
 static/**
+images/**
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
