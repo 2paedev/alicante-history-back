@@ -3,6 +3,8 @@
 static/**
 images/**
 
+**__py_cache__**
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
