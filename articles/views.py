@@ -14,7 +14,7 @@ class ArticlesViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = ArticleSerializer
     pagination_class = CustomResultsSetPagination
 
-    @action(detail=True, methods=['put'], name='Likes in articles')
+    @action(detail=True, methods=['put', 'delete'], name='Likes in articles')
     def like(self, request, pk=None):
         article = get_object_or_404(Article, pk=pk)
         data = {'likes': article.likes + 1}
