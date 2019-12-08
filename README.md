@@ -8,3 +8,5 @@
 * Gunicorn
 * Supervisor
 * logrotate
+* SSL
+* Unit testing
