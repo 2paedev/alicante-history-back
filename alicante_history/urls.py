@@ -34,7 +34,7 @@ router.extend(router_email_subscription)
 router.extend(router_resume)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('adminmanager/', admin.site.urls),
     path('', include(router.urls)),
 ]
 

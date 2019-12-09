@@ -3,7 +3,8 @@
 static/**
 images/**
 
-**__py_cache__**
+**__pycache__**
+**/*.pyc
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
