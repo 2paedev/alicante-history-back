@@ -3,6 +3,7 @@ import datetime
 from django.db import models
 
 from authors.models import Author
+from bibliography.models import Bibliography
 from custom_image.models import CustomImage
 from tags.models import Tag
 
@@ -16,7 +17,7 @@ class Article(models.Model):
     images = models.ManyToManyField(CustomImage)
     text = models.CharField(max_length=10000, blank=False, null=False, default='')
     likes = models.PositiveIntegerField(blank=False, null=False, default=0)
-    bibliography = models.CharField(max_length=10000, blank=False, null=False, default='')
+    bibliography = models.ManyToManyField(Bibliography)
 
     class Meta:
         ordering = ['created']

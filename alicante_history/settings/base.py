@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'email_subscription.apps.EmailSubscriptionConfig',
     'authors.apps.AuthorsConfig',
     'resume.apps.ResumeConfig',
+    'bibliography.apps.BibliographyConfig',
 ]
 
 MIDDLEWARE = [

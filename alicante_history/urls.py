@@ -7,6 +7,7 @@ from rest_framework import routers
 
 from articles.urls import router as router_articles
 from authors.urls import router as router_authors
+from bibliography.urls import router as router_bibliography
 from email_subscription.urls import router as router_email_subscription
 from resume.urls import router as router_resume
 from tags.urls import router as router_tags
@@ -30,6 +31,7 @@ router = DefaultRouter()
 router.extend(router_articles)
 router.extend(router_authors)
 router.extend(router_tags)
+router.extend(router_bibliography)
 router.extend(router_email_subscription)
 router.extend(router_resume)
 
