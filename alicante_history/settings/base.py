@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'authors.apps.AuthorsConfig',
     'resume.apps.ResumeConfig',
     'bibliography.apps.BibliographyConfig',
+    'notifications.apps.NotificationsConfig',
 ]
 
 MIDDLEWARE = [
